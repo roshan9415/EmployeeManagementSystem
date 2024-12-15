@@ -1,0 +1,50 @@
+# Build results
+bin/
+obj/
+out/
+
+# User-specific files
+*.user
+*.vs/
+.vscode/
+
+# Logs
+*.log
+Logs/
+
+# IDE-specific files
+*.suo
+*.user
+*.rsuser
+*.cache
+*.pdb
+*.mdb
+
+# Temporary files
+*.tmp
+*.swp
+*.sln.docstates
+
+# Rider IDE files
+.idea/
+
+# Angular build artifacts
+dist/
+build/
+
+# Node modules
+node_modules/
+
+# Environment files
+src/environments/*.local.ts
+src/environments/*.staging.ts
+src/environments/*.production.ts
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+.angular/
+.angular/cache/
+

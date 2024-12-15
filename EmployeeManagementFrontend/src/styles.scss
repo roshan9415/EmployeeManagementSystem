@@ -1,0 +1,102 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1 {
+  color: #1b7a30;
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+h2 {
+  color: #343a40;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+
+button {
+  border-radius: 5px;
+  padding: 8px 15px;
+  cursor: pointer;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+table th,
+table td {
+  padding: 12px;
+  text-align: left;
+  border: 1px solid #dee2e6;
+}
+
+table th {
+  background-color: #007bff;
+  color: white;
+}
+
+table tr:nth-child(even) {
+  background-color: #f8f9fa;
+}
+
+table tr:hover {
+  background-color: #f1f1f1;
+}
+
+form {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form .form-group {
+  margin-bottom: 15px;
+}
+
+form .form-group label {
+  display: block;
+  font-weight: bold;
+}
+
+form .form-control {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+form button {
+  background-color: #28a745;
+  color: white;
+  border: none;
+}
+
+form button:hover {
+  background-color: #218838;
+}
+
+form .btn-secondary {
+  background-color: #6c757d;
+  color: white;
+  border: none;
+}
+
+form .btn-secondary:hover {
+  background-color: #5a6268;
+}

@@ -1,0 +1,53 @@
+<div class="container mt-4">
+  <h2>{{ employee.id ? 'Edit Employee' : 'Add Employee' }}</h2>
+  <form (ngSubmit)="saveEmployee(employeeForm)" #employeeForm="ngForm">
+
+    <div class="form-group">
+      <label for="name">Name</label>
+      <input id="name" class="form-control" [(ngModel)]="employee.name" name="name" required #name="ngModel" />
+      <div *ngIf="name.invalid && name.touched" class="text-danger">
+        Name is required
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="email">Email</label>
+      <input id="email" type="email" class="form-control" [(ngModel)]="employee.email" name="email" required
+        #email="ngModel" />
+      <div *ngIf="email.invalid && email.touched" class="text-danger">
+        Valid email is required
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="position">Position</label>
+      <input id="position" class="form-control" [(ngModel)]="employee.position" name="position" required
+        #position="ngModel" />
+      <div *ngIf="position.invalid && position.touched" class="text-danger">
+        Position is required
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="department">Department</label>
+      <input id="department" type="text" class="form-control" [(ngModel)]="employee.department" name="department"
+        required #department="ngModel" />
+      <div *ngIf="department.invalid && department.touched" class="text-danger">
+        Department is required
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="salary">Salary</label>
+      <input id="salary" type="number" class="form-control" [(ngModel)]="employee.salary" name="salary" required
+        #salary="ngModel" />
+      <div *ngIf="salary.invalid && salary.touched" class="text-danger">
+        Salary is required
+      </div>
+    </div>
+
+    <button type="submit" class="btn btn-success" [disabled]="employeeForm.invalid">
+      Save
+    </button>
+
+    <button [routerLink]="['/employees']" class="btn btn-cancel">
+      Cancel
+    </button>
+  </form>
+</div>
